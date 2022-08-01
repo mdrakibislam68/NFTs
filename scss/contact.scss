@@ -1,0 +1,231 @@
+// Contact Start
+.contact{
+    .title{
+        h1{
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            color: #012E47;
+        }
+    }
+    .main-contact{
+        justify-content: space-around;
+        margin-bottom: 180px;
+        .message{
+            width: 690px;
+            // height: 641px;
+        }
+        .row{
+            padding: 30px;
+            // width: 60%;
+            border-radius: 23px;
+            
+            .row-title{
+                h2{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #012E47;
+                    margin-bottom: 48px;
+                }
+                
+            }
+            .item{
+                width: 100%;
+                justify-content: space-between;
+                .name,.email{
+                    width: 50%;
+                }
+                .title{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #012E47;
+                }
+                .input{
+                    width: 100%;
+                    height: 47px;
+                    background-color: #F5FAFC;
+                    border-radius: 9px;
+                    padding: 12px 19px;
+                    border: none;
+                    color: #65696B;
+                    
+                }
+                .msg-text{
+                    .form-control{
+                        background-color: #F5FAFC;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                    label{
+                        color: #65696B;
+                    }
+
+                }
+                .btn{
+                    background: linear-gradient(173.78deg, rgba(207, 116, 255, 0.8) -40.9%, rgba(27, 89, 237, 0.8) 194.64%);
+                    padding: 13px 33px;
+                    color: #fff;
+                    border-radius: 10px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                // .btn:hover{
+                //     background: #fff;
+                //     color: #1B59ED;
+                // }
+            }
+        }
+        .details{
+            flex-direction: column;
+            .item{
+                width: 328px;
+                height: 155px;
+                border-radius: 18px;
+                padding: 25px 35px;
+                .title{
+                    justify-content: start;
+                    align-items: center;
+
+                    h3{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+                .desc{
+                    color: #65696B;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+// Contact End
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .contact{
+        .main-contact{
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .message{
+                width: 100%;
+            }
+            .details{
+                margin: 50px 0;
+                flex-direction: row;
+                padding: 0;
+                column-gap: 25px;
+                .item{
+                    width: 45%;
+                    height: 100%;
+                    margin-top: 30px;
+                    .title{
+                        row-gap: 5px;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .row{
+                .item{
+                    flex-direction: column;
+                    .name,.email{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .foot-main{
+        margin-bottom: 30px;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .contact{
+        .main-contact{
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .message{
+                width: 100%;
+            }
+            .details{
+                margin: 50px 0;
+                flex-direction: row;
+                padding: 0;
+                column-gap: 25px;
+                .item{
+                    width: 45%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .contact{
+        .main-contact{
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .message{
+                width: 100%;
+            }
+            .details{
+                margin: 50px 0;
+                flex-direction: row;
+                padding: 0;
+                column-gap:10px;
+                .item{
+                    width: 32%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .contact{
+        .main-contact{
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .message{
+                width: 90%;
+            }
+            .details{
+                margin: 50px 0;
+                flex-direction: row;
+                padding: 0;
+                column-gap:10px;
+                .item{
+                    width: 32%;
+                }
+            }
+        }
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

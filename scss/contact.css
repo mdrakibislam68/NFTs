@@ -1,0 +1,260 @@
+.contact .title h1 {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #012E47;
+}
+
+.contact .main-contact {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 180px;
+}
+
+.contact .main-contact .message {
+  width: 690px;
+}
+
+.contact .main-contact .row {
+  padding: 30px;
+  border-radius: 23px;
+}
+
+.contact .main-contact .row .row-title h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #012E47;
+  margin-bottom: 48px;
+}
+
+.contact .main-contact .row .item {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .main-contact .row .item .name, .contact .main-contact .row .item .email {
+  width: 50%;
+}
+
+.contact .main-contact .row .item .title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #012E47;
+}
+
+.contact .main-contact .row .item .input {
+  width: 100%;
+  height: 47px;
+  background-color: #F5FAFC;
+  border-radius: 9px;
+  padding: 12px 19px;
+  border: none;
+  color: #65696B;
+}
+
+.contact .main-contact .row .item .msg-text .form-control {
+  background-color: #F5FAFC;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact .main-contact .row .item .msg-text label {
+  color: #65696B;
+}
+
+.contact .main-contact .row .item .btn {
+  background: linear-gradient(173.78deg, rgba(207, 116, 255, 0.8) -40.9%, rgba(27, 89, 237, 0.8) 194.64%);
+  padding: 13px 33px;
+  color: #fff;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact .main-contact .details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .main-contact .details .item {
+  width: 328px;
+  height: 155px;
+  border-radius: 18px;
+  padding: 25px 35px;
+}
+
+.contact .main-contact .details .item .title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .main-contact .details .item .title h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact .main-contact .details .item .desc {
+  color: #65696B;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .contact .main-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .contact .main-contact .message {
+    width: 100%;
+  }
+  .contact .main-contact .details {
+    margin: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .contact .main-contact .details .item {
+    width: 45%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .contact .main-contact .details .item .title {
+    row-gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .contact .main-contact .row .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .main-contact .row .item .name, .contact .main-contact .row .item .email {
+    width: 100%;
+  }
+  .foot-main {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact .main-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .contact .main-contact .message {
+    width: 100%;
+  }
+  .contact .main-contact .details {
+    margin: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .contact .main-contact .details .item {
+    width: 45%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact .main-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .contact .main-contact .message {
+    width: 100%;
+  }
+  .contact .main-contact .details {
+    margin: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .contact .main-contact .details .item {
+    width: 32%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact .main-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .contact .main-contact .message {
+    width: 90%;
+  }
+  .contact .main-contact .details {
+    margin: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .contact .main-contact .details .item {
+    width: 32%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

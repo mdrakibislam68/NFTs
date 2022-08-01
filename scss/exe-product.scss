@@ -1,0 +1,29 @@
+.exe-main{
+    width: 100%;
+}
+.item{
+    background: #fff;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 30px ;
+    .item-title{
+        justify-content: space-between;
+        .right{
+            text-align: end;
+
+        }
+    }
+    .job-seek{
+        .seeker{
+            margin-left: -9px;
+        }
+        .share{
+            text-align: end;
+            img{
+                width: 20px;
+            height: 20px;
+            }
+        }
+    }
+}

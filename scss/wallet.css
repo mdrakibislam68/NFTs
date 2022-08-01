@@ -1,0 +1,107 @@
+.title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title h1 {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.wallet {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wallet .wall-main {
+  background: linear-gradient(194.5deg, rgba(255, 255, 255, 0.72) 2.87%, rgba(255, 255, 255, 0.17) 89.73%);
+  border-radius: 30px;
+  padding: 30px;
+  width: 1110px;
+  margin-bottom: 140px;
+}
+
+.wallet .wall-main .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wallet .wall-main .item {
+  text-align: center;
+  border-radius: 26px;
+  padding: 40px;
+  max-width: 330px;
+}
+
+.wallet .wall-main .item img {
+  margin-bottom: 30px;
+}
+
+.wallet .wall-main .item h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #26292E;
+  margin-bottom: 20px;
+}
+
+.wallet .wall-main .item .btn {
+  padding: 15px 45px;
+  background: #F3F3F3;
+  border-radius: 10px;
+  color: #65696B;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.wallet .wall-main .item .btn:hover, .wallet .wall-main .item .active {
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .wallet .wall-main .item {
+    width: 270px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .wallet .wall-main .item .btn {
+    padding: 15px 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .wallet .wall-main .item {
+    width: 300px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .wallet .wall-main .item .btn {
+    padding: 15px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wallet .wall-main .item {
+    width: 200px;
+  }
+  .wallet .wall-main .item .btn {
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .wallet .wall-main .item {
+    width: 280px;
+  }
+}
+/*# sourceMappingURL=wallet.css.map */

@@ -1,0 +1,109 @@
+.explore {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.explore .sidebar {
+  margin-top: 0;
+}
+
+.explore .nav-menu .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.explore .exe-main {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.explore .active3 {
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+}
+
+.explore .item {
+  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.explore .item .item-title {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.explore .item .item-title .right {
+  text-align: end;
+}
+
+.explore .item .job-seek .seeker {
+  margin-left: -9px;
+  width: 26px;
+  height: 26px;
+}
+
+.explore .item .job-seek .share {
+  text-align: end;
+}
+
+.explore .item .job-seek .share img {
+  width: 20px;
+  height: 20px;
+}
+
+.exp-pagination {
+  height: 100px;
+  margin-top: 50px;
+}
+
+.exp-pagination .exp-cont {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 500px;
+  }
+  .explore {
+    margin-top: 30px;
+  }
+  .explore .item {
+    height: 100%;
+    margin-top: 10px;
+  }
+  .exp-pagination {
+    margin-top: 50px;
+  }
+  .footer .information-links {
+    display: none;
+  }
+  .footer .subscribe {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .explore {
+    margin-top: 30px;
+  }
+  .explore .item {
+    height: 385px;
+    margin-top: 10px;
+  }
+  .exp-pagination {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=explore.css.map */

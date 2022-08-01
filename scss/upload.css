@@ -1,0 +1,208 @@
+.h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #26292E;
+}
+
+.custom-up-btn {
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.upload-main {
+  height: 100%;
+}
+
+.upload-main .up-twice {
+  width: 750px;
+  padding: 30px 30px 55px 30px;
+  background: linear-gradient(194.5deg, rgba(255, 255, 255, 0.72) 2.87%, rgba(255, 255, 255, 0.17) 89.73%);
+  border-radius: 30px;
+}
+
+.upload-main .up-twice .single {
+  text-align: center;
+  width: 48%;
+  padding: 30px;
+  border-radius: 26px;
+}
+
+.h5 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #012E47;
+}
+
+.up-input {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #65696B;
+  background-color: #F5FAFC;
+  border-radius: 9px;
+  border: none;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.single-upload {
+  padding: 40px;
+  border-radius: 23px;
+}
+
+.single-upload .drag-note {
+  width: 40%;
+}
+
+.single-upload .drag-note .drag-drop {
+  width: 100%;
+  height: 76%;
+  background: #F5FAFC;
+  border-radius: 10px;
+  text-align: center;
+  padding: 76px 63px;
+}
+
+.single-upload .drag-note .drag-drop .img {
+  width: 20%;
+}
+
+.single-upload .drag-note .drag-drop h4, .single-upload .drag-note .drag-drop p {
+  color: #65696B;
+}
+
+.single-upload .name-desc-price {
+  width: 55%;
+}
+
+.single-upload .name-desc-price .desc input {
+  height: 100px;
+}
+
+.single-upload .name-desc-price .price .form-select option {
+  width: 100px;
+}
+
+.single-upload .name-desc-price .submite-preview {
+  margin-top: 32px;
+}
+
+.single-upload .name-desc-price .submite-preview .preview {
+  width: 40%;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  background: #F5FAFC;
+  border-radius: 9px;
+  padding: 21px;
+  color: #012E47;
+}
+
+.single-upload .name-desc-price .submite-preview .preview:hover, .single-upload .name-desc-price .submite-preview .submit:hover {
+  color: #fff;
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+}
+
+.single-upload .name-desc-price .submite-preview .submit {
+  background: #F5FAFC;
+  color: #012E47;
+  width: 55%;
+  border-radius: 9px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 21px;
+}
+
+.single-upload .name-desc-price .submite-preview .active {
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .upload-main .up-twice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+  }
+  .upload-main .up-twice .single {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .single-upload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-upload .drag-note {
+    width: 95%;
+  }
+  .single-upload .name-desc-price {
+    width: 95%;
+  }
+}
+
+.single-upload .drag-note .drag-drop {
+  padding: 35px 30px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .upload-main .up-twice {
+    width: 550px;
+  }
+  .single-upload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-upload .drag-note {
+    width: 95%;
+  }
+  .single-upload .name-desc-price {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .single-upload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-upload .drag-note {
+    width: 95%;
+  }
+  .single-upload .name-desc-price {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=upload.css.map */

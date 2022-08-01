@@ -1,0 +1,215 @@
+// Upload Start
+.h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #26292E;
+}
+.custom-up-btn{
+    color: #FFFFFF;
+    align-items: center;
+    padding: 10px 14px;
+    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.upload-main{
+    height: 100%;
+    .up-twice{
+        width: 750px;
+        // height: 378px;
+        padding: 30px 30px 55px 30px;
+        background: linear-gradient(194.5deg, rgba(255, 255, 255, 0.72) 2.87%, rgba(255, 255, 255, 0.17) 89.73%);
+        border-radius: 30px;
+        .single{
+            text-align: center;
+            width: 48%;
+            padding: 30px;
+
+            border-radius: 26px;
+        }
+    }
+}
+// Upload End
+
+// Upload-page Start
+// Upload-Page Start
+.h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #012E47;
+}
+.up-input{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #65696B;
+    background-color: #F5FAFC;
+    border-radius: 9px;
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+}
+.single-upload{
+    padding: 40px;
+    border-radius: 23px;
+    .drag-note{
+        width: 40%;
+        .drag-drop{
+            width: 100%;
+            height: 76%;
+            background: #F5FAFC;
+            border-radius: 10px;
+            text-align: center;
+            padding: 76px 63px;
+            .img{
+                width: 20%;
+
+            }
+            h4,p{
+                color: #65696B;
+            }
+        }
+    }
+    .name-desc-price{
+        width: 55%;
+        .desc{
+            input{
+                height: 100px;
+            }
+        }
+        .price{
+            .form-select{
+                option{
+                    width: 100px;
+                }
+            }
+        }
+        .submite-preview{
+            margin-top: 32px;
+            .preview{
+                width: 40%;
+                text-align: center;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                background: #F5FAFC;
+                border-radius: 9px;
+                padding: 21px;
+                color: #012E47;
+            }
+            .preview:hover,.submit:hover{
+                color: #fff;
+                background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+            }
+            .submit{
+                background: #F5FAFC;
+                color: #012E47;
+                width: 55%;
+                border-radius: 9px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                padding: 21px;
+            }
+            .active{
+                background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+                color: #fff;
+
+            }
+        }
+    }
+}
+
+// Upload-Page End
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .upload-main{
+        .up-twice{
+            flex-direction: column;
+            width: 350px;
+            .single{
+                width: 95%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+     // Upload-page Start
+     .single-upload{
+        flex-direction: column;
+        .drag-note{
+            width: 95%;
+        }
+        .name-desc-price{
+            width: 95%;
+        }
+    }
+ }
+
+//  upload-page
+.single-upload{
+    .drag-note{
+        .drag-drop{
+            padding: 35px 30px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .upload-main{
+        .up-twice{
+            width: 550px;
+        }
+    }
+
+    // Upload-page Start
+    .single-upload{
+        flex-direction: column;
+        .drag-note{
+            width: 95%;
+        }
+        .name-desc-price{
+            width: 95%;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+    // Upload-page Start
+    .single-upload{
+        flex-direction: column;
+        .drag-note{
+            width: 95%;
+        }
+        .name-desc-price{
+            width: 95%;
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

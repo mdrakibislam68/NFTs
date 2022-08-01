@@ -1,0 +1,284 @@
+// Blog Details
+.p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #65696B;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+.h1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #012E47;
+
+}
+.h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px; 
+    color: #012E47;
+    line-height: 150%;
+}
+.h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #012E47;
+    line-height: 150%;
+    margin: 0;
+}
+.replay{
+    color: #566FFE;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+.custom-input{
+    width: 100%;
+    background: #F5FAFC;
+    border-radius: 9px;
+    padding: 12px 20px;
+    border: none;
+}
+.custom-btn{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+.blog-details{
+    .details{
+        width: 67%;
+        padding: 15px;
+        position: relative;
+        border-radius: 30px;
+        .details-item{
+            .item-title{
+                img{
+                    width: 100%;
+                }
+                .btn{
+                    left: 35px;
+                    top: 30px;
+                }
+            }
+            .text{
+            padding: 15px;
+
+                
+            }
+            .user{
+                img{
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 17px;
+                }
+            }
+        }
+    }
+}
+
+.recent-post{
+    column-gap: 10px;
+}
+
+.com-main{
+    width: 90%;
+    // height: auto;
+    padding: 25px 35px;
+    border-radius: 30px;
+    .first-comment{
+        border: 1px solid #D9E6F0;
+        border-radius: 10px;
+        padding: 13px 20px;
+        margin: 30px 0;
+        .user-name{
+            img{
+                margin-right: 17px;
+            }
+        }
+    }
+    .replay-comment{
+        width: 80%;
+        margin-top: 0;
+        background: #F5FAFC;
+
+    }
+}
+.replay-section{
+    border: 1px solid #D9E6F0;
+    border-radius: 10px;
+    padding: 13px 20px;
+    .name-email{
+        width: 40%;
+    }
+}
+.recent-post{
+    .item{
+        width: 32%;
+        // height: 570px;
+        padding: 13px;
+        border-radius: 34px;
+        .item-title{
+            img{
+                width: 100%;
+            }
+            .btn{
+                left: 30px;
+                top: 30px;
+                border-radius: 24px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                padding: 8px 27px;
+            }
+        }
+        .text{
+            padding: 17px;
+            padding-bottom: 0;
+    }
+    .user{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        .user-name{
+            align-items: center;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 17px;
+            }
+            .date{
+                font-family: 'Roboto';
+                font-style: normal;
+                color: #65696B;
+                font-weight: 400;
+                font-size: 13px;
+            }
+        }
+    }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .blog-details{
+        .d-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .details{
+            width: 100%;
+            .details-item{
+                .text{
+                    .p{
+                        p{
+                            // white-space: nowrap;
+                            // overflow: hidden;
+                            // text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .side{
+        width: 100%;
+        
+        .categories{
+            .all-item{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .connect{
+            .social{
+                .social-icon{
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+    
+        .com-main{
+            width: 100%;
+        }
+        .recent-post{
+            .item{
+                width: 95%;
+                margin-bottom: 30px;
+            }
+        }
+        .replay-section{
+            .name-email-main{
+                flex-direction: column;
+            }
+            .name-email{
+                width: 100%;
+            }
+        }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  // Blog Details
+  .blog-details{
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-self: flex-start;
+    }
+    .details{
+        width: 100%;
+    }
+}
+.side{
+    width: 100%;
+    .categories{
+        .all-item{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .connect{
+        .social{
+            .social-icon{
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+    .com-main{
+        width: 100%;
+    }
+    .recent-post{
+        .item{
+            width: 45%;
+            margin-bottom: 30px;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
