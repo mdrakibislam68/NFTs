@@ -11,6 +11,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0;
 }   
 
 *{
@@ -730,7 +731,7 @@ body{
     }
 }
 .copywrite{
-    margin-top: -30px;
+    // margin-top: -30px;
     background: #fff;
     height: 100px;
 .copy{

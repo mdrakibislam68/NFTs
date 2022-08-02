@@ -708,6 +708,12 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1439.98px) { 
+    .container{
+        max-width: 1410px;
+    }
+    .navbar2{
+        display: none;
+    }
     .ab-head{
         .ab-main{
             .arrow1{
