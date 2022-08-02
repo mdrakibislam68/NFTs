@@ -27,6 +27,7 @@ body {
   background-size: cover;
   background-position: center center;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-brand {

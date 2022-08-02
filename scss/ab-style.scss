@@ -186,10 +186,6 @@
         height: 100%;
         .container{
            .row{
-            .item{
-                // display: inline-block;
-                // width: 20%;
-            }
             .item-img{
                 border-radius: 30px;
                 width: 100% ;
@@ -281,11 +277,6 @@
             .chart-img{
                 column-gap: 15px;
                 justify-content: center;
-    
-                .item-col{
-                    // grid-column: 2;
-                    // grid-row: 1; 
-                }
             }
             .center-img{
                 width: 100%;
@@ -523,7 +514,7 @@
     }
     .mission{
         margin-bottom: 50px;
-        margin-top: 0;
+        margin-top: 0 ;
         .container{
             .mission-sm{
                 justify-content: space-around;
@@ -694,9 +685,6 @@
     .economy{
         .item{
             width: 45%;
-        }
-        .item2{
-            // width: 100%;
         }
     }
 }
