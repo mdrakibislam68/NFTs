@@ -880,7 +880,7 @@ body{
                 flex-wrap: wrap;
                 justify-content: center;
                 .nav-item{
-                    width: 130px;
+                    width: 85px;
                     .nav-link{
                         display: flex;
                         align-items: center;
@@ -994,7 +994,12 @@ body{
                     .sub-social{
                         margin-left: 10px;
                         margin-bottom: 30px;
+                        width: 130px;
                         .sub-btn{
+                            .input{
+                                padding: 10px 5px;
+                                width: 130px;
+                            }   
                             .btn{
                                 margin-left: 0;
                             }
@@ -1443,6 +1448,7 @@ body{
                     .sub-social{
                         margin-left: 10px;
                         .sub-btn{
+                            
                             .btn{
                                 margin-left: -18px;
                             }

@@ -974,7 +974,7 @@ body {
             justify-content: center;
   }
   .explore .sidebar-exe-main .sidebar .nav-menu .nav-item {
-    width: 130px;
+    width: 85px;
   }
   .explore .sidebar-exe-main .sidebar .nav-menu .nav-item .nav-link {
     display: -webkit-box;
@@ -1093,6 +1093,11 @@ body {
   .footer .container .row .subscribe .sub-social {
     margin-left: 10px;
     margin-bottom: 30px;
+    width: 130px;
+  }
+  .footer .container .row .subscribe .sub-social .sub-btn .input {
+    padding: 10px 5px;
+    width: 130px;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .btn {
     margin-left: 0;

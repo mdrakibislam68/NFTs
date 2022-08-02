@@ -171,12 +171,12 @@
   border-radius: 18px;
   height: 230px;
   width: 330px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .mission .container .mission-sm .item .item-img {
-  margin-top: -50px;
-  margin-bottom: 25px;
+  margin-top: -60px;
+  margin-bottom: 20px;
 }
 
 .mission .container .mission-sm .item .item-desc {
@@ -451,7 +451,7 @@
             justify-content: center;
   }
   .ab-head .ab-main .ab-right .ab-right-main {
-    width: 330px;
+    width: 305px;
     margin-top: 50px;
   }
   .ab-head .ab-main .ab-right .ab-right-main .list ul .right {
