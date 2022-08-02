@@ -30,12 +30,15 @@ $('.nav-item').click(function(){
 
     $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:15,
+        margin:30,
         // nav:true,
         dot: true,
         responsive:{
             0:{
-                items:1
+                items:2
+            },
+            500:{
+              items:2
             },
             600:{
                 items:2

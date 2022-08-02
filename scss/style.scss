@@ -309,16 +309,12 @@ body{
     .artist{
         height: 200px;
         .item {     
-            border-radius: 20px;
-            width: 100%;
-            height: 100%;
-            margin-right: 21px;
+            border-radius: 30px;
+            background: #fff;
+            padding: 12px;
+            display: flex;
             .art-img{
-                width: 130px;   
-                height: 130px;
                 border-radius: 20px;
-                margin-right: 10px;
-                margin: 12px 0 15px 12px;
             }
         } 
         .desc {
@@ -347,7 +343,7 @@ body{
         margin-right: 31px;
         width: 100%;
         img {
-            display: block;
+            // display: block;
             // width: 50%;
         }
         
@@ -404,7 +400,7 @@ body{
                     margin-bottom: 0;
                 }
                 .nav-light{
-                    visibility: hidden;
+                    display: none;
                     margin-left: -65px;
                 }
             }
@@ -415,7 +411,7 @@ body{
                 color: #fff;
             }
             a:hover .nav-light{
-                visibility: visible;
+                display: block;
 
             }
             .active3 .nav-light{
@@ -767,15 +763,17 @@ body{
 
 @media (max-width:575px) {
     .container{
-        max-width: 500px;
-        
+        max-width: 95%;
+    }
+    body{
+        overflow-x: hidden;
     }
     .navbar{
-        visibility: hidden;
+        display: none;
         
     }
     .navbar2{
-        visibility: visible;
+        display: block;
         display: flex;
         align-items: center;
         max-width: 100%;
@@ -794,7 +792,7 @@ body{
     }
     .main{
         .arrow1{
-            visibility: hidden;
+            display: none;
         }
         .title-counter{
             // display: block;
@@ -816,19 +814,20 @@ body{
                 }
             }
             .shadow1{
-                visibility: hidden;
+                display: none;
             }
             .counter{
             .rectangle{
                 .up-rectangle,.down-rectangle{
                     right: 0;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     // flex-direction: column;
                     .rec-right{
                         margin-left: 0;
                     }
                     .element{
-                        width: 180px;
+                        width: 160px;
+                        height: 250px;
                         .ele-title{
                             .right{
                                 white-space: nowrap;
@@ -849,6 +848,21 @@ body{
         }
     }
     #artist{
+        .artist{
+            .desc{
+                display: none;
+            }
+            .item{
+                // width: 100%;
+                display: inline-block;
+                // .art-img{
+                //     width: 100%;
+                //     height: 100%;
+                //     margin: 0;
+                //     padding: 10px;
+                // }
+            }
+        }
         .title{
             p{
                 display: none;
@@ -869,7 +883,7 @@ body{
                     .nav-link{
                         display: flex;
                         align-items: center;
-                        justify-content: start;
+                        justify-content: center;
                         p{
                             display: none;
                         }
@@ -877,6 +891,9 @@ body{
                 }
             }
         }   
+        .exe-main{
+            margin-left: 0;
+        }
         .content{
             // margin-left: 0px;
             .single-content-main{
@@ -885,8 +902,9 @@ body{
             margin: 0 auto;
             }
             .single-content{
-                width: 20 0px;
-                // margin-right: 10px; 
+                width: 200px;
+                margin-left: 70px;
+                // height: 315px;
                 .item-title{
                     .right{
                         display: none;
@@ -907,6 +925,11 @@ body{
                 padding: 15px;
                 .logo{
                     margin-bottom: 0;
+                    .date{
+                        .date-num{
+                            margin-left: 0;
+                        }
+                    }
                 }
             }
         }
@@ -984,16 +1007,19 @@ body{
         }
         
     } 
+    .copywrite{
+        margin-top: 0;
+    }
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .container{
         max-width: 540px;
     }
     .navbar{
-        visibility: hidden;
+        display: none;
     }
     .navbar2{
-        visibility: visible;
+        display: block;
         display: flex;
         align-items: center;
         .container{
@@ -1010,7 +1036,7 @@ body{
     }
     .main{
         .arrow1{
-            visibility: hidden;
+            display: none;
         }
         .title-counter{
             // display: block;
@@ -1021,7 +1047,7 @@ body{
                 }
             }
             .shadow1{
-                visibility: hidden;
+                display: none;
             }
             .counter{
             .rectangle{
@@ -1038,6 +1064,16 @@ body{
                     margin-top: 0;
                 }
             }
+            }
+        }
+    }
+    #artist{
+        .artist{
+            .item{
+                display: inline-block;
+                .desc{
+                    display: none;
+                }
             }
         }
     }
@@ -1157,16 +1193,16 @@ body{
         max-width: 720px;
     }
     .navbar{
-        visibility: hidden;
+        display: none;
     }
     .navbar2{
-        visibility: visible;
+        display: block;
         display: flex;
         align-items: center;
     }
     .main{
         .arrow1{
-            visibility: hidden;
+            display: none;
         }
         .title-counter{
             // display: block;
@@ -1177,7 +1213,7 @@ body{
                 }
             }
             .shadow1{
-                visibility: hidden;
+                display: none;
             }
             .counter{
             .rectangle{
@@ -1296,7 +1332,7 @@ body{
         max-width: 960px;
     }
     .navbar{
-        visibility: visible;
+        display: block;
         .navbar-collapse{
             .navbar-nav{
                 .nav-item{
@@ -1306,11 +1342,11 @@ body{
         }
     }
     .navbar2{
-        visibility: hidden;
+        display: none;
     }
     .main{
         .arrow1{
-            visibility: visible;
+            display: block;
         }
         .title-counter{
             flex-direction: row;
@@ -1320,7 +1356,7 @@ body{
                 }
             }
             .shadow1{
-                visibility: hidden;
+                display: none;
             }
             .counter{
                 
@@ -1427,7 +1463,7 @@ body{
         max-width: 1140px;
     }
     .navbar{
-        visibility: visible;
+        display: block;
         .navbar-collapse{
             .navbar-nav{
                 .nav-item{
@@ -1437,7 +1473,7 @@ body{
         }
     }
     .navbar2{
-        visibility: hidden;
+        display: none;
     }
     .main{
         .title-counter{
@@ -1447,7 +1483,7 @@ body{
             }
         }
         .shadow1{
-            visibility: visible;
+            display: block;
             right: -45px;
         }
         .counter{
@@ -1515,7 +1551,7 @@ body{
         max-width: 1410px;
     }
     .navbar2{
-        visibility: hidden;
+        display: none;
     }
     .main{
         .title-counter{

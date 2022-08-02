@@ -443,7 +443,13 @@
             .details{
                 // display: grid;
                 grid-gap: 10px;
-                .col-4,.col-3,.col-2,.col-sm-3,.col-lg-2{
+                .col-4,.col-3,.col-2,.col-sm-3{
+                    margin-top: 5px;
+                    background: #F5FAFC;
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                }
+                .col-sm-3{
                     margin-top: 5px;
                     background: #F5FAFC;
                     border-radius: 10px;

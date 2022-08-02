@@ -1,3 +1,11 @@
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #012E47;
+    margin: 0;
+}
 // Contact Start
 .contact{
     .title{
@@ -37,14 +45,9 @@
                 justify-content: space-between;
                 .name,.email{
                     width: 50%;
+                    margin-bottom: 15px;
                 }
-                .title{
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    color: #012E47;
-                }
+                
                 .input{
                     width: 100%;
                     height: 47px;

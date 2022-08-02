@@ -105,12 +105,15 @@
                     font-weight: 700;
                     font-size: 24px;
                     display: flex;
+                    align-items: center;
+                    margin: 0 10px ;
                     .list-desc{
                         color: #566FFE;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 500;
                         font-size: 18px;
+                        margin-bottom: 0;
                         padding: 5px;
                         }
                     }
@@ -118,7 +121,8 @@
                     border-right: 1px solid #000;
                 }
                 .right{
-                    margin: 0 23px;
+                    // margin: 0 23px;
+                    align-self:start;
                 }
                 }
             }
@@ -367,7 +371,7 @@
 
  @media (max-width:575px) {
     .container{
-        max-width: 500px;
+        max-width: 90%;
         
     }
     .navbar2{
@@ -394,8 +398,8 @@
             .ab-left{
                 // margin-right: 50px;
                 .shadow1{
-                    width: 350px;
-                    height: 250px;
+                    width: 315px;
+                    height: 380px;
                 }
                 .ab-img-section{
                     margin-left: 0px;
@@ -411,8 +415,15 @@
 
                 .ab-right-main{
                     // margin-left: 50px;
-                    width: 350px;
+                    width: 330px;
                     margin-top: 50px;
+                    .list{
+                        ul{
+                            .right{
+                                margin: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -420,6 +431,9 @@
     .mission{
         margin-bottom: 50px;
         .container{
+            .title{
+                margin-top: 50px;
+            }
             .mission-sm{
                 justify-content: space-around;
             }
@@ -462,7 +476,7 @@
         .container{
             .review-item{
                 .rev-desc{
-                    width: 350px;
+                    width: 300px;
                     // height: 100%;
                     padding: 10px;
                     // display: flex;   
@@ -479,6 +493,9 @@
                 }
             }
         }
+    }
+    .find .container .row .button .btn{
+        margin-bottom: 20px;
     }
  }
 
