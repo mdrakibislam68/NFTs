@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Roboto:wght@300;400;500;700&display=swap");
 .h1 {
   font-family: 'Red Hat Display';
   font-style: normal;
@@ -161,6 +162,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .main .title-counter .title {
@@ -259,45 +264,78 @@ body {
 
 .main .title-counter .counter .rectangle {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
 }
 
 .main .title-counter .counter .rectangle .up-rectangle, .main .title-counter .counter .rectangle .down-rectangle {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   right: 0;
+  gap: 45px;
 }
 
-.main .title-counter .counter .rectangle .up-rectangle .rec-right, .main .title-counter .counter .rectangle .down-rectangle .rec-right {
-  margin-left: 30px;
-}
-
-.main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
+.main .title-counter .counter .rectangle .element {
   padding: 10px;
   height: 0%;
   background: #fff;
   border-radius: 30px;
-  margin-bottom: 30px;
   -webkit-animation: mymove ease-out infinite 5s;
           animation: mymove ease-out infinite 5s;
 }
 
-.main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img {
+.main .title-counter .counter .rectangle .element .rectangle-img {
   width: 100%;
+  position: relative;
+  border-radius: 20px;
 }
 
-.main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img img, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img img {
+.main .title-counter .counter .rectangle .element .rectangle-img img {
   width: 100%;
-  height: 73%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.main .title-counter .counter .rectangle .up-rectangle .element .ele-title, .main .title-counter .counter .rectangle .down-rectangle .element .ele-title {
+.main .title-counter .counter .rectangle .element .rectangle-img .gridient {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border-radius: 20px;
+  background: linear-gradient(182.5deg, rgba(86, 118, 163, 0) 42.16%, rgba(1, 43, 143, 0.8) 97.99%);
+}
+
+.main .title-counter .counter .rectangle .element .rectangle-img .time {
+  z-index: 999;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  list-style: none;
+  gap: 5px;
+}
+
+.main .title-counter .counter .rectangle .element .ele-title {
   padding: 7px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.main .title-counter .counter .rectangle .up-rectangle .element .ele-title .right, .main .title-counter .counter .rectangle .down-rectangle .element .ele-title .right {
+.main .title-counter .counter .rectangle .element .ele-title .right {
   text-align: right;
 }
 
@@ -319,11 +357,11 @@ body {
   }
 }
 
-.main .title-counter .counter .rectangle .ele-down {
+.main .title-counter .counter .ele-down {
   margin-top: 100px;
 }
 
-.main .title-counter .counter .rectangle .ele-up {
+.main .title-counter .counter .ele-up {
   margin-top: -100px;
 }
 
@@ -456,14 +494,13 @@ body {
 }
 
 .nav-menu .nav-item .active3 .nav-light {
-  visibility: visible;
+  display: block;
 }
 
 .nav-menu .active3 {
   background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
   border-radius: 14px;
   color: #fff;
-  visibility: visible;
 }
 
 .exe-main {
@@ -866,7 +903,7 @@ body {
 
 @media (max-width: 575px) {
   .container {
-    max-width: 95%;
+    max-width: 93%;
   }
   body {
     overflow-x: hidden;
@@ -926,13 +963,16 @@ body {
     right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .main .title-counter .counter .rectangle .up-rectangle .rec-right, .main .title-counter .counter .rectangle .down-rectangle .rec-right {
     margin-left: 0;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
-    width: 160px;
-    height: 250px;
+    width: 95%;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element .ele-title .right, .main .title-counter .counter .rectangle .down-rectangle .element .ele-title .right {
     white-space: nowrap;
@@ -1003,8 +1043,7 @@ body {
     margin: 0 auto;
   }
   .explore .sidebar-exe-main .content .single-content {
-    width: 200px;
-    margin-left: 70px;
+    width: 95%;
   }
   .explore .sidebar-exe-main .content .single-content .item-title .right {
     display: none;
@@ -1015,7 +1054,7 @@ body {
     margin-bottom: 30px;
   }
   .nft .nft-main .sell-item {
-    width: 250px;
+    width: 90%;
     margin-bottom: 30px;
     padding: 15px;
   }
@@ -1033,11 +1072,17 @@ body {
     margin-bottom: 30px;
   }
   .collection .coll-main .coll-item {
-    width: 210px;
+    width: 350px;
     margin-bottom: 30px;
   }
   .collection .coll-main .full-width {
     width: 410px;
+  }
+  .footer .container .row .foot-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer .container .row .company-contact {
     display: -webkit-box;
@@ -1072,12 +1117,13 @@ body {
     display: none;
   }
   .footer .container .row .information-links .foot-info {
-    width: 50%;
+    width: 90%;
   }
   .footer .container .row .information-links .foot-links {
-    width: 50%;
+    width: 90%;
   }
   .footer .container .row .subscribe {
+    padding: 15px;
     margin-top: 10px;
     width: 100%;
     display: -webkit-box;
@@ -1093,11 +1139,11 @@ body {
   .footer .container .row .subscribe .sub-social {
     margin-left: 10px;
     margin-bottom: 30px;
-    width: 130px;
+    width: 90%;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .input {
     padding: 10px 5px;
-    width: 130px;
+    width: 90%;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .btn {
     margin-left: 0;
@@ -1227,7 +1273,7 @@ body {
         justify-content: space-around;
   }
   .collection .coll-main .coll-item {
-    width: 230px;
+    width: 95%;
     margin-bottom: 30px;
   }
   .collection .coll-main .full-width {
@@ -1271,6 +1317,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer .container .row .subscribe .foot-sub {
+    display: none;
   }
   .footer .container .row .subscribe .sub-social {
     margin-left: 10px;
@@ -1318,7 +1367,7 @@ body {
     right: 0;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
-    width: 250px;
+    width: 300px;
   }
   .main .title-counter .counter .rectangle .ele-down {
     margin-top: 0;
@@ -1491,6 +1540,9 @@ body {
   .footer .container .row .foot-item {
     width: 320px;
   }
+  .footer .container .row .company-contact .contact {
+    display: none;
+  }
   .footer .container .row .information-links {
     display: block;
     margin-right: 50px;
@@ -1572,7 +1624,7 @@ body {
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1410px;
+    width: 1410px;
   }
   .navbar2 {
     display: none;
@@ -1593,7 +1645,7 @@ body {
             flex-direction: column;
   }
   .explore .sidebar-exe-main .content .single-content {
-    width: 330px;
+    width: 300px;
     margin-right: 30px;
   }
   .collection .coll-main .coll-item {

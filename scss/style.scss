@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Roboto:wght@300;400;500;700&display=swap');
 .h1{
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // overflow: hidden;
 }
 body{
     background: radial-gradient(78.81% 78.81% at 67.44% 21.19%, rgba(207, 116, 255, 0.1) 0%, rgba(67, 123, 255, 0.1) 47.4%, rgba(50, 222, 250, 0.1) 100%);
@@ -171,6 +172,7 @@ body{
     }
     .title-counter{
         justify-content: space-between;
+        flex-direction: row;
     .title{
         justify-content: center;
         align-items: center;
@@ -257,25 +259,64 @@ body{
         
         .rectangle{
             margin-top: 20px;
-            .up-rectangle,.down-rectangle{
-            justify-content: space-around;
-            right: 0;
-            .rec-right{
-                margin-left: 30px;   
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+                .up-rectangle,.down-rectangle{
+                    justify-content: space-around;
+                    right: 0;
+                    gap: 45px;
+                // margin-left: 30px;   
             }
             .element{
                 padding: 10px;
                 height: 0%;
                 background: #fff;
                 border-radius: 30px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
                animation: mymove ease-out infinite 5s ;
                 .rectangle-img{
                     width: 100%;
+                    // height: 100%;
+                    position: relative;
+                    // z-index: 999;
+                    border-radius: 20px;
+
                     img{
                         width: 100%;
-                        height: 73%;
+                        // height: 73%;
+                        // z-index: -999;
                         // margin: 10px 10px 10px 0px;
+                        // opacity: 0.6;
+                        // background-image: url(img/rectangle/Rectangle13.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .gridient{
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        border-radius: 20px;
+                        background: linear-gradient(182.5deg, rgba(86, 118, 163, 0) 42.16%, rgba(1, 43, 143, 0.8) 97.99%);
+
+                    }
+                    .time{
+                        z-index: 999;
+                        position: absolute;
+                        bottom: 20px;
+                        margin: 0 auto;
+                        text-align: center;
+                        width: 90%;
+                        color: #fff;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 150%;
+                        list-style: none;
+                        gap: 5px;
+
                     }
                 }
                 .ele-title{
@@ -300,8 +341,6 @@ body{
             }
         }
     }
-}
-    
 }
 #artist{
     .title{
@@ -343,11 +382,6 @@ body{
     .owl-item {
         margin-right: 31px;
         width: 100%;
-        img {
-            // display: block;
-            // width: 50%;
-        }
-        
     }
     .owl-dots{
         position: absolute;
@@ -416,14 +450,14 @@ body{
 
             }
             .active3 .nav-light{
-                visibility: visible;
+                display: block;
             }
         }
         .active3{
             background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
             border-radius: 14px;
             color: #fff;
-                visibility: visible;
+                // visibility: visible;
         }
     }
     .exe-main{
@@ -760,11 +794,9 @@ body{
 }
 }
 
-
-
 @media (max-width:575px) {
     .container{
-        max-width: 95%;
+        max-width: 93%;
     }
     body{
         overflow-x: hidden;
@@ -822,13 +854,13 @@ body{
                 .up-rectangle,.down-rectangle{
                     right: 0;
                     justify-content: space-around;
-                    // flex-direction: column;
+                    flex-direction: column;
                     .rec-right{
                         margin-left: 0;
                     }
                     .element{
-                        width: 160px;
-                        height: 250px;
+                        width: 95%;
+                        // height: 250px;
                         .ele-title{
                             .right{
                                 white-space: nowrap;
@@ -903,8 +935,8 @@ body{
             margin: 0 auto;
             }
             .single-content{
-                width: 200px;
-                margin-left: 70px;
+                width: 95%;
+                // margin-left: 70px;
                 // height: 315px;
                 .item-title{
                     .right{
@@ -920,7 +952,7 @@ body{
             justify-content: space-around;
             margin-bottom: 30px;
             .sell-item{
-                width: 250px;
+                width: 90%;
                 // height: 330px;
                 margin-bottom: 30px;
                 padding: 15px;
@@ -941,7 +973,7 @@ body{
             justify-content: space-around;
             margin-bottom: 30px;
             .coll-item{
-                width: 210px;
+                width: 350px;
                 margin-bottom: 30px;
             }
             .full-width{
@@ -952,6 +984,9 @@ body{
     .footer{
         .container{
             .row{
+                .foot-main{
+                    flex-direction: column;
+                }
                 .company-contact{
                     display: flex;
                     width: 100%;
@@ -977,13 +1012,14 @@ body{
                     flex-direction: row;
                     display: none;
                     .foot-info{
-                        width: 50%;
+                        width: 90%;
                     }
                     .foot-links{
-                        width: 50%;
+                        width: 90%;
                     }
                 }
                 .subscribe{
+                    padding: 15px;
                     margin-top: 10px;
                     width: 100%;
                     display: flex;
@@ -994,11 +1030,11 @@ body{
                     .sub-social{
                         margin-left: 10px;
                         margin-bottom: 30px;
-                        width: 130px;
+                        width: 90%;
                         .sub-btn{
                             .input{
                                 padding: 10px 5px;
-                                width: 130px;
+                                width: 90%;
                             }   
                             .btn{
                                 margin-left: 0;
@@ -1133,7 +1169,7 @@ body{
             justify-content: space-around;
 
             .coll-item{
-                width: 230px;
+                width: 95%;
                 margin-bottom: 30px;
             }
             .full-width{
@@ -1175,6 +1211,9 @@ body{
                     margin-top: 20px;
                     width: 100%;
                     display: flex;
+                    .foot-sub{
+                        display: none;
+                    }
                     .sub-social{
                         margin-left: 10px;
                         .sub-btn{
@@ -1226,7 +1265,7 @@ body{
                 .up-rectangle,.down-rectangle{
                     right: 0;
                     .element{
-                        width: 250px;
+                        width: 300px;
                     }
                 }
                 .ele-down{  
@@ -1424,15 +1463,11 @@ body{
                 .foot-item{
                     width: 320px;
                 }
-                // .company-contact{
-                //     display: flex;
-                //     width: 100%;
-                //     justify-content: start;
-                //     margin-top: 50px;
-                //     .company{
-                //         margin-right: 50px;
-                //     }
-                // }
+                .company-contact{
+                   .contact{
+                    display: none;
+                   }
+                }
                 
                 .information-links{
                     // width: 320px;
@@ -1555,7 +1590,7 @@ body{
 
 @media (min-width: 1440px) { 
     .container{
-        max-width: 1410px;
+        width: 1410px;
     }
     .navbar2{
         display: none;
@@ -1585,7 +1620,7 @@ body{
             .content{
                 // margin-left: 90px;
                 .single-content{
-                    width: 330px;
+                    width: 300px;
                     margin-right: 30px;
                 }
             }

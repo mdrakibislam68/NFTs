@@ -467,13 +467,13 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .mission .container .item {
-    width: 45%;
+  .mission .container .mission-sm .item {
+    width: 95%;
     height: 100%;
     margin-bottom: 30px;
     margin-right: 0;
   }
-  .mission .container .item .item-desc, .mission .container .item p {
+  .mission .container .mission-sm .item .item-desc, .mission .container .mission-sm .item p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -494,7 +494,7 @@
     width: 100%;
   }
   .review .container .review-item .rev-desc {
-    width: 300px;
+    width: 95%;
     padding: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -618,7 +618,7 @@
   }
   .mission .container .mission-sm .item {
     margin-bottom: 30px;
-    width: 250px;
+    width: 45%;
   }
   .mission .container .mission-sm .item p {
     white-space: nowrap;
@@ -662,7 +662,7 @@
     margin-top: -10px;
   }
   .mission .container .mission-sm .item {
-    width: 220px;
+    width: 45%;
   }
   .mission .container .mission-sm .item p {
     white-space: nowrap;
