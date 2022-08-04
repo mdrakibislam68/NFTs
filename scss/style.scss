@@ -304,7 +304,7 @@ body{
                     .time{
                         z-index: 999;
                         position: absolute;
-                        bottom: 20px;
+                        bottom: 15px;
                         margin: 0 auto;
                         text-align: center;
                         width: 90%;
@@ -315,7 +315,8 @@ body{
                         font-size: 18px;
                         line-height: 150%;
                         list-style: none;
-                        gap: 5px;
+                        gap: 9px;
+                        align-items: center;
 
                     }
                 }
@@ -831,19 +832,30 @@ body{
             // display: block;
             flex-direction: column;  
             .title{
-                margin-top: 20px;
+                margin-top: 0px;
+                .btn{
+                    margin-bottom: 20px;
+                }
                 .subscribe{
                     ul{
                         margin-top: 0;
-                        flex-direction: column;
+                        flex-direction: row;
                         li{
                             margin-bottom: 5px;
                             border-right: none;
+                            display: inline-block;
+                            flex-wrap: wrap;
+                            .sub{
+                                font-size: 20px;
+                            }
+                            span{
+                                margin-left: 0;
+                            }
                         }
                     }
                 }
                 h1{
-                    font-size: 52px;
+                    font-size: 32px;
                 }
             }
             .shadow1{
@@ -851,16 +863,25 @@ body{
             }
             .counter{
             .rectangle{
+                gap: 20px;
                 .up-rectangle,.down-rectangle{
                     right: 0;
                     justify-content: space-around;
-                    flex-direction: column;
+                    flex-direction: row;
+                    gap: 10px;
                     .rec-right{
                         margin-left: 0;
                     }
                     .element{
-                        width: 95%;
+                        width: 49%;
                         // height: 250px;
+                        .rectangle-img{
+                            .time{
+                                gap: 0;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
                         .ele-title{
                             .right{
                                 white-space: nowrap;
@@ -926,6 +947,9 @@ body{
         }   
         .exe-main{
             margin-left: 0;
+            .item{
+                padding: 10px;
+            }
         }
         .content{
             // margin-left: 0px;
@@ -933,10 +957,11 @@ body{
             justify-content: center;
             display: flex;
             margin: 0 auto;
+            column-gap: 15px;
             }
             .single-content{
-                width: 95%;
-                // margin-left: 70px;
+                width: 45%;
+                margin-left: 10px;
                 // height: 315px;
                 .item-title{
                     .right{
@@ -1020,7 +1045,7 @@ body{
                 }
                 .subscribe{
                     padding: 15px;
-                    margin-top: 10px;
+                    // margin-top: 10px;
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
@@ -1028,22 +1053,23 @@ body{
                         display: none;
                     }
                     .sub-social{
-                        margin-left: 10px;
+                        // margin-left: 10px;
                         margin-bottom: 30px;
                         width: 90%;
                         .sub-btn{
                             .input{
-                                padding: 10px 5px;
-                                width: 90%;
+                                padding: 10px 15px;
+                                width: 70%;
                             }   
                             .btn{
-                                margin-left: 0;
+                                margin-left: -20px;
                             }
                         }
                     }
                 }
                 .foot-item{
                     width: 100%;
+                    margin-top: 0 !important;
                 }
             }
         }
@@ -1410,6 +1436,13 @@ body{
                     right: 0;
                     .element{
                         width: 200px;
+                        .rectangle-img{
+                            .time{
+                                gap: 5px;
+                                padding-left: 11px;
+                                bottom: 5px;
+                            }
+                        }
                     }
                 }
                 .ele-down{  
@@ -1534,6 +1567,13 @@ body{
                 right: 0;
                 .element{
                     width: 230px;
+                    .rectangle-img{
+                        .time{
+                            gap: 5px;
+                            padding-left: 11px;
+                            bottom: 5px;
+                        }
+                    }
                 }
             }
         }

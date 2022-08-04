@@ -314,7 +314,7 @@ body {
 .main .title-counter .counter .rectangle .element .rectangle-img .time {
   z-index: 999;
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   margin: 0 auto;
   text-align: center;
   width: 90%;
@@ -325,7 +325,10 @@ body {
   font-size: 18px;
   line-height: 150%;
   list-style: none;
-  gap: 5px;
+  gap: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .title-counter .counter .rectangle .element .ele-title {
@@ -940,39 +943,60 @@ body {
             flex-direction: column;
   }
   .main .title-counter .title {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+  .main .title-counter .title .btn {
+    margin-bottom: 20px;
   }
   .main .title-counter .title .subscribe ul {
     margin-top: 0;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .main .title-counter .title .subscribe ul li {
     margin-bottom: 5px;
     border-right: none;
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .title-counter .title .subscribe ul li .sub {
+    font-size: 20px;
+  }
+  .main .title-counter .title .subscribe ul li span {
+    margin-left: 0;
   }
   .main .title-counter .title h1 {
-    font-size: 52px;
+    font-size: 32px;
   }
   .main .title-counter .shadow1 {
     display: none;
+  }
+  .main .title-counter .counter .rectangle {
+    gap: 20px;
   }
   .main .title-counter .counter .rectangle .up-rectangle, .main .title-counter .counter .rectangle .down-rectangle {
     right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
   }
   .main .title-counter .counter .rectangle .up-rectangle .rec-right, .main .title-counter .counter .rectangle .down-rectangle .rec-right {
     margin-left: 0;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
-    width: 95%;
+    width: 49%;
+  }
+  .main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img .time, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img .time {
+    gap: 0;
+    padding: 0;
+    margin: 0;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element .ele-title .right, .main .title-counter .counter .rectangle .down-rectangle .element .ele-title .right {
     white-space: nowrap;
@@ -1033,6 +1057,9 @@ body {
   .explore .sidebar-exe-main .exe-main {
     margin-left: 0;
   }
+  .explore .sidebar-exe-main .exe-main .item {
+    padding: 10px;
+  }
   .explore .sidebar-exe-main .content .single-content-main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1041,9 +1068,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
   }
   .explore .sidebar-exe-main .content .single-content {
-    width: 95%;
+    width: 45%;
+    margin-left: 10px;
   }
   .explore .sidebar-exe-main .content .single-content .item-title .right {
     display: none;
@@ -1124,7 +1154,6 @@ body {
   }
   .footer .container .row .subscribe {
     padding: 15px;
-    margin-top: 10px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1137,19 +1166,19 @@ body {
     display: none;
   }
   .footer .container .row .subscribe .sub-social {
-    margin-left: 10px;
     margin-bottom: 30px;
     width: 90%;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .input {
-    padding: 10px 5px;
-    width: 90%;
+    padding: 10px 15px;
+    width: 70%;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .btn {
-    margin-left: 0;
+    margin-left: -20px;
   }
   .footer .container .row .foot-item {
     width: 100%;
+    margin-top: 0 !important;
   }
   .copywrite {
     margin-top: 0;
@@ -1504,6 +1533,11 @@ body {
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
     width: 200px;
   }
+  .main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img .time, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img .time {
+    gap: 5px;
+    padding-left: 11px;
+    bottom: 5px;
+  }
   .main .title-counter .counter .rectangle .ele-down {
     margin-top: 100px;
   }
@@ -1591,6 +1625,11 @@ body {
   }
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
     width: 230px;
+  }
+  .main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img .time, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img .time {
+    gap: 5px;
+    padding-left: 11px;
+    bottom: 5px;
   }
   #artist .artist .item .art-img {
     width: 115px;

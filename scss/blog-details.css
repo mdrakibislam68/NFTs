@@ -109,10 +109,35 @@
   margin-right: 17px;
 }
 
+.com-main .replay-comment-main {
+  position: relative;
+}
+
 .com-main .replay-comment {
   width: 80%;
   margin-top: 0;
   background: #F5FAFC;
+  position: relative;
+}
+
+.com-main .replay-comment::before {
+  left: -60px;
+  width: 60px;
+  height: 1px;
+  background-color: #D9E6F0;
+  content: "";
+  top: 50%;
+  position: absolute;
+}
+
+.com-main .replay-comment::after {
+  left: -60px;
+  width: 1.5px;
+  height: 100%;
+  background: #D9E6F0;
+  content: "";
+  top: 0;
+  position: absolute;
 }
 
 .replay-section {
@@ -266,6 +291,22 @@
   .com-main {
     width: 100%;
   }
+  .recent-post .item {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .replay-section .name-email-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .replay-section .name-email {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   .recent-post .item {
     width: 45%;
     margin-bottom: 30px;
