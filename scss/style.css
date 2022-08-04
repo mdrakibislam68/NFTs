@@ -1174,7 +1174,7 @@ body {
     width: 70%;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .btn {
-    margin-left: -20px;
+    margin-left: -30px;
   }
   .footer .container .row .foot-item {
     width: 100%;
@@ -1346,6 +1346,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .footer .container .row .subscribe .foot-sub {
     display: none;
@@ -1354,7 +1357,7 @@ body {
     margin-left: 10px;
   }
   .footer .container .row .subscribe .sub-social .sub-btn .btn {
-    margin-left: 0;
+    margin-left: -10px;
   }
   .footer .container .row .foot-item {
     width: 100%;

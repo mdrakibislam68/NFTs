@@ -1062,7 +1062,7 @@ body{
                                 width: 70%;
                             }   
                             .btn{
-                                margin-left: -20px;
+                                margin-left: -30px;
                             }
                         }
                     }
@@ -1237,6 +1237,7 @@ body{
                     margin-top: 20px;
                     width: 100%;
                     display: flex;
+                    justify-content: start;
                     .foot-sub{
                         display: none;
                     }
@@ -1244,7 +1245,7 @@ body{
                         margin-left: 10px;
                         .sub-btn{
                             .btn{
-                                margin-left: 0;
+                                margin-left: -10px;
                             }
                         }
                     }
