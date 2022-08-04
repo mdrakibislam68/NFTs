@@ -322,13 +322,17 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   list-style: none;
   gap: 9px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main .title-counter .counter .rectangle .element .ele-title {
@@ -945,8 +949,14 @@ body {
   .main .title-counter .title {
     margin-top: 0px;
   }
+  .main .title-counter .title .desc {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
   .main .title-counter .title .btn {
     margin-bottom: 20px;
+    width: 120px;
+    height: 55px;
   }
   .main .title-counter .title .subscribe ul {
     margin-top: 0;
@@ -975,7 +985,7 @@ body {
     display: none;
   }
   .main .title-counter .counter .rectangle {
-    gap: 20px;
+    gap: 10px;
   }
   .main .title-counter .counter .rectangle .up-rectangle, .main .title-counter .counter .rectangle .down-rectangle {
     right: 0;
@@ -992,11 +1002,17 @@ body {
   }
   .main .title-counter .counter .rectangle .up-rectangle .element, .main .title-counter .counter .rectangle .down-rectangle .element {
     width: 49%;
+    border-radius: 20px;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element .rectangle-img .time, .main .title-counter .counter .rectangle .down-rectangle .element .rectangle-img .time {
     gap: 0;
-    padding: 0;
+    padding-left: 7px;
     margin: 0;
+    font-size: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: 10px;
   }
   .main .title-counter .counter .rectangle .up-rectangle .element .ele-title .right, .main .title-counter .counter .rectangle .down-rectangle .element .ele-title .right {
     white-space: nowrap;
@@ -1059,6 +1075,8 @@ body {
   }
   .explore .sidebar-exe-main .exe-main .item {
     padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
   }
   .explore .sidebar-exe-main .content .single-content-main {
     -webkit-box-pack: center;
@@ -1077,6 +1095,12 @@ body {
   }
   .explore .sidebar-exe-main .content .single-content .item-title .right {
     display: none;
+  }
+  .nft {
+    margin-top: 50px;
+  }
+  .nft .title {
+    font-size: 36px;
   }
   .nft .nft-main {
     -ms-flex-pack: distribute;
@@ -1126,6 +1150,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 0;
   }
   .footer .container .row .company-contact .company {
     margin-right: 10px;
@@ -1153,7 +1178,7 @@ body {
     width: 90%;
   }
   .footer .container .row .subscribe {
-    padding: 15px;
+    padding: 0px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -312,12 +312,13 @@ body{
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 150%;
                         list-style: none;
                         gap: 9px;
                         align-items: center;
-
+                        padding-left: 0;
+                        justify-content: center;
                     }
                 }
                 .ele-title{
@@ -833,8 +834,14 @@ body{
             flex-direction: column;  
             .title{
                 margin-top: 0px;
+                .desc{
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
                 .btn{
                     margin-bottom: 20px;
+                    width: 120px;
+                    height: 55px;
                 }
                 .subscribe{
                     ul{
@@ -863,7 +870,7 @@ body{
             }
             .counter{
             .rectangle{
-                gap: 20px;
+                gap: 10px;
                 .up-rectangle,.down-rectangle{
                     right: 0;
                     justify-content: space-around;
@@ -874,12 +881,16 @@ body{
                     }
                     .element{
                         width: 49%;
+                        border-radius: 20px;
                         // height: 250px;
                         .rectangle-img{
                             .time{
                                 gap: 0;
-                                padding: 0;
+                                padding-left: 7px;
                                 margin: 0;
+                                font-size: 12px;
+                                justify-content: center;
+                                bottom: 10px;
                             }
                         }
                         .ele-title{
@@ -949,6 +960,8 @@ body{
             margin-left: 0;
             .item{
                 padding: 10px;
+                border-radius: 10px;
+                margin-top: 10px;
             }
         }
         .content{
@@ -973,6 +986,10 @@ body{
     }
     }
     .nft{
+        margin-top: 50px;
+        .title{
+            font-size: 36px;
+        }
         .nft-main{
             justify-content: space-around;
             margin-bottom: 30px;
@@ -1018,6 +1035,7 @@ body{
                     justify-content: start;
                     margin-top: 10px;
                     justify-content: space-between;
+                    padding-left: 0;
                     .company{
                         margin-right: 10px;
                         .title{
@@ -1044,7 +1062,7 @@ body{
                     }
                 }
                 .subscribe{
-                    padding: 15px;
+                    padding: 0px;
                     // margin-top: 10px;
                     width: 100%;
                     display: flex;
